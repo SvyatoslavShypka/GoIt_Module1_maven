@@ -16,9 +16,6 @@ public class Main {
                 .create();
 
             CurrencyDto dto = gson.fromJson(new String(stream.readAllBytes()), CurrencyDto.class);
-//            System.out.println(dto);
-//            System.out.println("================================");
-//            dto.setCurrency(null);
             String toJson = gson.toJson(dto);
             System.out.println(toJson);
         }
